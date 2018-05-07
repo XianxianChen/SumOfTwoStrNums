@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SumOfTwoStrNums" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Number One:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdn-hq-yu1">
+                                <rect key="frame" x="20" y="120" width="147" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Number Two:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tft-kI-xow">
+                                <rect key="frame" x="20" y="200" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uPR-hw-MfV">
+                                <rect key="frame" x="187" y="120" width="168" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvq-oE-vao">
+                                <rect key="frame" x="187" y="200" width="168" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSy-sA-LeY">
+                                <rect key="frame" x="157.5" y="318.5" width="60" height="50"/>
+                                <color key="backgroundColor" red="0.24273594147469646" green="0.50876505769679103" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="sIz-jE-biH"/>
+                                </constraints>
+                                <state key="normal" title="Get Sum">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vj2-LR-roW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGP-Ve-WD5">
+                                <rect key="frame" x="20" y="418.5" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aGP-Ve-WD5" firstAttribute="top" secondItem="eSy-sA-LeY" secondAttribute="bottom" constant="50" id="8UN-dI-oXN"/>
+                            <constraint firstItem="uPR-hw-MfV" firstAttribute="leading" secondItem="rdn-hq-yu1" secondAttribute="trailing" constant="20" id="N3h-oD-bMS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uPR-hw-MfV" secondAttribute="trailing" constant="20" id="Pfh-N1-R50"/>
+                            <constraint firstItem="dvq-oE-vao" firstAttribute="leading" secondItem="Tft-kI-xow" secondAttribute="trailing" constant="20" id="Tyh-5X-IHK"/>
+                            <constraint firstItem="Tft-kI-xow" firstAttribute="top" secondItem="rdn-hq-yu1" secondAttribute="bottom" constant="50" id="U1A-K3-YEh"/>
+                            <constraint firstItem="aGP-Ve-WD5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WBv-eZ-FAc"/>
+                            <constraint firstItem="dvq-oE-vao" firstAttribute="top" secondItem="rdn-hq-yu1" secondAttribute="bottom" constant="50" id="WkJ-dk-Jcf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aGP-Ve-WD5" secondAttribute="trailing" constant="20" id="Ysd-cO-kk2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dvq-oE-vao" secondAttribute="trailing" constant="20" id="eWc-Hy-VoF"/>
+                            <constraint firstItem="rdn-hq-yu1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="hDH-3K-gOf"/>
+                            <constraint firstItem="eSy-sA-LeY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="i87-8w-L3D"/>
+                            <constraint firstItem="dvq-oE-vao" firstAttribute="leading" secondItem="Tft-kI-xow" secondAttribute="trailing" constant="20" id="kE3-LX-x8O"/>
+                            <constraint firstItem="dvq-oE-vao" firstAttribute="top" secondItem="uPR-hw-MfV" secondAttribute="bottom" constant="50" id="kf1-yZ-I6R"/>
+                            <constraint firstItem="uPR-hw-MfV" firstAttribute="leading" secondItem="rdn-hq-yu1" secondAttribute="trailing" constant="20" id="m7q-Vp-xBM"/>
+                            <constraint firstItem="rdn-hq-yu1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oWF-Zx-rkt"/>
+                            <constraint firstItem="eSy-sA-LeY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="qOg-IP-uz0"/>
+                            <constraint firstItem="uPR-hw-MfV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="uVs-GG-nhM"/>
+                            <constraint firstItem="dvq-oE-vao" firstAttribute="top" secondItem="uPR-hw-MfV" secondAttribute="bottom" constant="50" id="ueT-9t-lsU"/>
+                            <constraint firstItem="Tft-kI-xow" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uqj-yy-tfP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="sumLabel" destination="aGP-Ve-WD5" id="0ar-Ey-JZK"/>
+                        <outlet property="tfOne" destination="uPR-hw-MfV" id="uFp-fN-oZv"/>
+                        <outlet property="tfTwo" destination="dvq-oE-vao" id="XfD-dp-G4B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
